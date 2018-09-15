@@ -1,3 +1,5 @@
+/* todo: fix backgrounds & borders, add media queries */
+
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 html { 
@@ -61,16 +63,18 @@ body {
 
 button {
   font-size: 150%;
-  width:100%;
+}
+i {
+  width: 100%;
 }
 
 #score-banner {
   background-color: palevioletred;
 }
 
+
 #user-score {
   background-color: purple;
   font-size: 150%;
-  
 
 }

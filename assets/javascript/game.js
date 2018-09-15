@@ -1,12 +1,6 @@
-// assign vals to buttons
-// buttons increment score by their assigned values
-
+// todo: everything
 function pickBtnVals() {
-  //create objects, iterate through, add event listeners that
-  // take object.val as param.
-  
   var gems = [];
-  
   for (var i = 0; i < 4; i++){
     var gID = "#gem" + i;
     var tempObj = {
@@ -18,19 +12,22 @@ function pickBtnVals() {
     gems[i].DOMobj.attr("data-val", gems[i].val);
     gems[i].DOMobj.on("click", (e) => {
       console.log($(e.target.parentNode).attr("data-val"));
+      incrementUserScore($(e.target.parentNode).attr("data-val"));
     })
-    
-    
   }
-  
-
   console.log(gems);
   return gems;
 }
 
 function incrementUserScore(amount) {
-  var userScoreHTML = $("user-score");
-  userScoreHTML.text(parseInt(userScoreHTML.text()) + amount);
+  var userScoreHTML = $("#user-score");
+  var newScore = parseInt(userScoreHTML.text()) + parseInt(amount);
+  
+  console.log("Current score: ", newScore);
+  console.log("incrementUserScore called");
+  console.log("Amount: " + amount);
+  console.log(userScoreHTML);
+  userScoreHTML.text(newScore);
 
 }
 
