@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+html { 
+  background: url(../images/krystal-ng-crystal.jpg) no-repeat center center fixed #000; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+* {
+  border: 1px solid purple;
+  
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#left-panel {
+  width: 49%;
+}
+
+#right-panel {
+  width: 49%;
+  background-color: aqua;
+  text-align: center;
+}
+
+#top-rt-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+#target-score {
+  width: 35%;
+}
+
+#target-score p {
+  font-size: 150%;
+}
+
+#wins-losses {
+  width: 50%;
+}
+
+#crystal-imgs {
+  display: flex;
+  justify-content: space-around;
+  background-color: palegoldenrod;
+}
+
+.crystal-container {
+  width: 20%;
+  background-color: red;
+  text-align: center;
+}
+
+button {
+  font-size: 150%;
+  width:100%;
+}
+
+#score-banner {
+  background-color: palevioletred;
+}
+
+#user-score {
+  background-color: purple;
+  font-size: 150%;
+  
+
+}

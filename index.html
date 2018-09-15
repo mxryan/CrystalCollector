@@ -1,16 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" >
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
   <div class="container">
-    <h1>The Crystal Collector Game</h1>
+    <div id="left-panel">
+      <h1>The Crystal Collector Game</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.Voluptatem vitae doloremque error accusantium
+        perspiciatis, molestias omnis quidem nostrum architecto porro quas aperiam! Facere perspiciatis aliquid dolor
+        et tempora quisquam nostrum.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem vitae doloremque error accusantium
+        perspiciatis, molestias omnis quidem nostrum architecto porro quas aperiam! Facere perspiciatis aliquid dolor
+        et tempora quisquam nostrum.</p>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem vitae doloremque error accusantium
+        perspiciatis, molestias omnis quidem nostrum architecto porro quas aperiam! Facere perspiciatis aliquid dolor
+        et tempora quisquam nostrum.</p>
+    </div>
+    <div id="right-panel">
+      <div id="top-rt-row">
+        <div id="target-score">
+          <h4>Target score</h4>
+          <p>0</p>
+        </div>
+        <div id="wins-losses">
+          <p>msg</p>
+          <p>wins: 0</p>
+          <p>losses: 0</p>
+        </div>
+      </div>
+      <div id="crystal-imgs">
+        <div class="crystal-container">
+            <button id="gem0">
+              <i class="fas fa-gem"></i>
+            </button>
+        </div>
+        <div class="crystal-container">
+            <button id="gem1">
+              <i class="far fa-gem"></i>
+            </button>
+        </div>
+        <div class="crystal-container">
+            <button id="gem2">
+              <i class="fas fa-gem"></i>
+            </button>
+        </div>
+        <div class="crystal-container">
+            <button id="gem3">
+              <i class="far fa-gem"></i>
+            </button>
+        </div>
+      </div>
+      <p id="score-banner">User score:</p>
+      <div id="user-score">0</div>
+    </div>
   </div>
-  <script src="assets/javascript/game.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+  </script>
+  <script src="assets/javascript/game.js">
+  </script>
 </body>
+
 </html>
