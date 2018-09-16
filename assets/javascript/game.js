@@ -1,26 +1,14 @@
-// todo: everything
 function pickBtnVals() {
-  console.log("pickBtns called");
-  var gems = [];
-  for (var i = 0; i < 4; i++){
+  for (var i = 0; i < 4; i++) {
     var gID = "#gem" + i;
-    //why am i making this array of objs?
-    var tempObj = {
-      gemID: gID,
-      val: Math.floor(Math.random() * 10 + 1),
-      DOMobj: $(gID),
-    }
-    gems.push(tempObj);
-    gems[i].DOMobj.attr("data-val", gems[i].val);
-    gems[i].DOMobj.unbind("click");
-    gems[i].DOMobj.on("click", (e) => {
-      console.log($(e.target.parentNode).attr("data-val"));
+    var val = Math.floor(Math.random() * 10 + 1);
+    var DOMobj = $(gID)
+    DOMobj.attr("data-val", val);
+    DOMobj.unbind("click");
+    DOMobj.on("click", (e) => {
       incrementUserScore($(e.target.parentNode).attr("data-val"));
     })
-    
   }
-  console.log(gems);
-  return gems;
 }
 
 function incrementUserScore(amount) {
@@ -28,8 +16,8 @@ function incrementUserScore(amount) {
   var newScore = parseInt(userScoreHTML.text()) + parseInt(amount);
   userScoreHTML.text(newScore);
   $("#msg-area").text("");
-  if (newScore === targetScore){
-     userWins();
+  if (newScore === targetScore) {
+    userWins();
   } else if (newScore > targetScore) {
     userLoses();
   }
@@ -43,7 +31,6 @@ function setTargetScore() {
 }
 
 function userWins() {
-  console.log("userwins called");
   $("#msg-area").text("You win!")
   pickBtnVals();
   targetScore = setTargetScore();
@@ -54,7 +41,6 @@ function userWins() {
 }
 
 function userLoses() {
-  console.log("userLosses called");
   $("#msg-area").text("You lose");
   pickBtnVals();
   targetScore = setTargetScore();
