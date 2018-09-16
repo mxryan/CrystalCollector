@@ -17,6 +17,7 @@ function pickBtnVals() {
       console.log($(e.target.parentNode).attr("data-val"));
       incrementUserScore($(e.target.parentNode).attr("data-val"));
     })
+    
   }
   console.log(gems);
   return gems;
@@ -26,6 +27,7 @@ function incrementUserScore(amount) {
   var userScoreHTML = $("#user-score");
   var newScore = parseInt(userScoreHTML.text()) + parseInt(amount);
   userScoreHTML.text(newScore);
+  $("#msg-area").text("");
   if (newScore === targetScore){
      userWins();
   } else if (newScore > targetScore) {

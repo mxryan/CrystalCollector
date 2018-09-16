@@ -1,5 +1,11 @@
 /* todo: fix backgrounds & borders, add media queries */
 
+/* darkblue #105187
+blunt greenishblue #2c8693
+eggwhite #F0F1D5
+burntorgange #F19722
+burntorangered #C33325 */
+
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
 html { 
@@ -9,12 +15,11 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
-* {
-  border: 1px solid purple;
-}
 
 body {
   font-family: 'Oswald', sans-serif;
+  color: #F0F1D5;
+  text-shadow: 1px 1px 3px #105187;
 }
 .container {
   display: flex;
@@ -27,7 +32,9 @@ body {
 
 #right-panel {
   width: 49%;
-  background-color: aqua;
+  color: #F19722;
+  background-color: rgb(44, 134, 147, 0.4);
+  border-radius: 5px;
   text-align: center;
 }
 
@@ -38,25 +45,26 @@ body {
 
 #target-score-container {
   width: 35%;
+  
+  
 }
 
-#target-score p {
-  font-size: 150%;
+#target-score {
+  font-size: 200%;
 }
 
 #wins-losses {
   width: 50%;
+  
 }
 
 #crystal-imgs {
   display: flex;
   justify-content: space-around;
-  background-color: palegoldenrod;
 }
 
 .crystal-container {
-  width: 20%;
-  background-color: red;
+  width: 25%;
   text-align: center;
 }
 
@@ -65,19 +73,39 @@ button {
   width:100%;
   padding:0px;
 }
+
+#gem0 i{
+  background-color: rgb(16, 81, 135, 0.8)
+}
+#gem1 i{
+  background-color: rgb(44, 134, 147, 0.8)
+}
+#gem2 i{
+  background-color: rgb(241, 151, 34, 0.8)
+}
+#gem3 i{
+  background-color: rgb(195, 51, 37, 0.8)
+}
+
 i {
   width: 90%;
-  background-color: lightcyan;
   margin: 0%;
   padding: 5%;
 }
 
-#score-banner {
-  background-color: palevioletred;
+#user-score {
+  font-size: 200%;
 }
 
-#user-score {
-  background-color: purple;
-  font-size: 150%;
-
+@media screen and (max-width: 640px) {
+  .container {
+    display: block;
+  }
+  #left-panel {
+    width: 100%;
+  }
+  #right-panel {
+    width: 100%
+  }
+  
 }

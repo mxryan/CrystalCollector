@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Crystal Collector</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" >
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -27,13 +27,13 @@
     <div id="right-panel">
       <div id="top-rt-row">
         <div id="target-score-container">
-          <h4>Target score</h4>
+          <p>Target score</p>
           <p id="target-score">0</p>
         </div>
         <div id="wins-losses">
-          <p id="msg-area">msg</p>
-          <p id="wins">0</p>
-          <p id="losses">0</p>
+          <p>&nbsp;<span id="msg-area"></span></p>
+          <p>Wins: <span id="wins">0</span></p>
+          <p>Losses: <span id="losses">0</span></p>
         </div>
       </div>
       <div id="crystal-imgs">
@@ -58,8 +58,10 @@
             </button>
         </div>
       </div>
-      <p id="score-banner">User score:</p>
-      <div id="user-score">0</div>
+      <div id="user-score-container">
+        <p id="score-banner">User score</p>
+        <p id="user-score">0</p>
+      </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js">
