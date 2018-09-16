@@ -63,9 +63,14 @@ body {
 
 button {
   font-size: 150%;
+  width:100%;
+  padding:0px;
 }
 i {
-  width: 100%;
+  width: 90%;
+  background-color: lightcyan;
+  margin: 0%;
+  padding: 5%;
 }
 
 #score-banner {
