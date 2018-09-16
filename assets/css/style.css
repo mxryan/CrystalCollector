@@ -75,16 +75,21 @@ button {
 }
 
 #gem0 i{
-  background-color: rgb(16, 81, 135, 0.8)
+  background-color: rgb(16, 81, 135, 0.8);
+  color: #F0F1D5;
 }
 #gem1 i{
-  background-color: rgb(44, 134, 147, 0.8)
+  background-color: rgb(44, 134, 147, 0.8);
+  color: #F19722;
+  
 }
 #gem2 i{
-  background-color: rgb(241, 151, 34, 0.8)
+  background-color: rgb(241, 151, 34, 0.8);
+  color:#C33325;
 }
 #gem3 i{
-  background-color: rgb(195, 51, 37, 0.8)
+  background-color: rgb(195, 51, 37, 0.8);
+  color: #105187;
 }
 
 i {
