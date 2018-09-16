@@ -11,7 +11,6 @@ html {
 }
 * {
   border: 1px solid purple;
-  
 }
 
 body {
@@ -37,7 +36,7 @@ body {
   justify-content: space-between;
 }
 
-#target-score {
+#target-score-container {
   width: 35%;
 }
 
@@ -76,7 +75,6 @@ i {
 #score-banner {
   background-color: palevioletred;
 }
-
 
 #user-score {
   background-color: purple;
