@@ -6,7 +6,13 @@ function pickBtnVals() {
     DOMobj.attr("data-val", val);
     DOMobj.unbind("click");
     DOMobj.on("click", (e) => {
-      incrementUserScore($(e.target.parentNode).attr("data-val"));
+      var x = parseInt($(e.target.parentNode).attr("data-val"));
+      // for some reason x occasionally evaluates to NaN
+      if (isNaN(x)) {
+        return;
+      } else {
+        incrementUserScore(x);
+      }
     })
   }
 }
